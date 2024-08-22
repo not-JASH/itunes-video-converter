@@ -93,7 +93,7 @@ def main():
         language = extract_language_from_filename(subtitle)
         ffmpeg_cmd.extend([
             "-map", f"{i}:s",  # Map the subtitle stream
-            f"-metadata:s:s:{i-1}", f"language={language}"  # Set the subtitle language
+            #f"-metadata:s:s:{i-1}", f"language={language}"  # Set the subtitle language
         ])
 
     # Specify the output file format and the final output file
